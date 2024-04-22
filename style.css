@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0,0, 30);
+    color: #eee;
+}
+img {
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
