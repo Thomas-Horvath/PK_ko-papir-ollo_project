@@ -5,14 +5,62 @@
 }
 
 body {
-    background: rgb(0,0, 30);
+    background: rgb(0, 0, 30);
     color: #eee;
 }
+
 img {
     width: 100%;
 }
+
+.app-container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+
+.app-container h1 {
+    font-size: 3.5rem;
+}
+
+.app {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5rem 2rem;
+    width: 80%;
+}
+
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.item:first-child {
+    transform: rotate(90deg);
+}
+
+.item:first-child:hover {
+    transform: rotate(0deg);
+}
+
+.item {
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.item:hover {
+    transform: rotate(-90deg);
 }
